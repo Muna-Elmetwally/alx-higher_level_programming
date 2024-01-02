@@ -12,7 +12,8 @@ if (!list)
 return (0);
 while (slow && fast && fast->next)
 {
-slow = slow->next;fast = fast->next->next;
+slow = slow->next;
+fast = fast->next->next;
 if (slow == fast)
 return (1);
 }
