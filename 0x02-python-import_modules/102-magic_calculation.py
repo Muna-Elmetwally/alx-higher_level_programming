@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-import sys
 
-if __name__ != "__main__":
-    exit()
-
-argc = len(sys.argv) - 1
-
-i = 0
-result = 0
-for arg in sys.argv:
-    if i != 0:
-        result += int(arg)
+def magic_calculation(a, b):
+    from magic_calculation_102 import add, sub
+    if a < b:
+        c = add(a, b)
+        for i in range(4, 6):
+            c = add(c, i)
+        return c
     else:
-        i += 1
-print("{:d}".format(result))
+        return sub(a, b)
