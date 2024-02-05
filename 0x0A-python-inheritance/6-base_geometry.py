@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-"""
-    5-base_geometry: class BaseGeometry
+"""6-base_geometry.py
 """
 
 
 class BaseGeometry:
-    """
-        BaseGeometry
-        Attributes: None.
-        Methods:
-            area() - raises an Exception
-    """
-    def area(self):
-        raise Exception("area() is not implemented")
+    """ BaseGeometry class """
 
+    def area(self):
+        """ raises an Exception """
+        raise Exception('area() is not implemented')
